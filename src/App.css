@@ -291,3 +291,25 @@ body {
   background: #fffdfb; border: 1px solid #f1e0d6;
   padding: 15px; border-radius: 10px; margin-top: 15px;
 }
+
+/* No seu App.css, procure ou adicione no final do arquivo: */
+
+/* Media Query para celulares (telas com menos de 768px de largura) */
+@media (max-width: 767px) {
+  .secao-destaque {
+    /* ADICIONE OU AJUSTE ESTAS LINHAS: */
+    padding-top: 20px;     /* Dá um respiro para o título não colar no header */
+    margin-top: 10px;      /* Adiciona um espaço extra se necessário */
+    position: relative;     /* Garante que o elemento seja renderizado no fluxo correto */
+    z-index: 1;             /* Coloca o conteúdo acima de fundos fixos se houver */
+  }
+
+  /* Se o título h2 dentro da seção também estiver muito grande: */
+  .secao-destaque h2 {
+    font-size: 1.3rem;     /* Diminui um pouco a fonte no celular */
+    margin-top: 0;         /* Remove margens superiores padrão */
+    display: flex;         /* Garante que o emoji e o texto fiquem alinhados */
+    align-items: center;   /* Centraliza verticalmente o emoji com o texto */
+    gap: 8px;              /* Espaço entre o emoji e o texto */
+  }
+}
