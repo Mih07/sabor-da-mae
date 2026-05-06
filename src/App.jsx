@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Analytics } from "@vercel/analytics/next"
+
 
 function App() {
   // --- ESTADOS ---
@@ -145,7 +145,7 @@ const estaFechadoHoje = datasFechado.includes(dataHojeISO);
 
   return (
     <div className="container">
-      <Analytics/>
+
       <header className="header-dinamico">
         <div className="header-content">
           <img src="/logo.png" alt="Logo" className="logo-restaurante" />
